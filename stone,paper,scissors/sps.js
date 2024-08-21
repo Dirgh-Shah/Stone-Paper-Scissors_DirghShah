@@ -1,4 +1,3 @@
-//selecting individual elements
 document.addEventListener('DOMContentLoaded',() => {
 const stone = document.getElementById('stone');
 const paper = document.getElementById('paper');
@@ -14,7 +13,6 @@ let compScore = 0;
     paper.addEventListener('click', () => choice('paper'));
     scissor.addEventListener('click', () => choice('scissor'));
 
-//creating a function to perform the calculations
 function choice(theChoice){
     const choices = ['stone','paper','scissor'];
     const computerChoice = choices[Math.floor(Math.random()*choices.length)];
